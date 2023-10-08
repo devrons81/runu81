@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=600, user-scalable=0"/>
+    <meta charset="UTF-8">
+    <title>bhb</title>
+    <link href="game.css" rel="stylesheet" />
+    <script src="game.js"> </script>
+    <script src="cordova.js"></script>
+</head>
+<body>
+    <div id="holder">
+        <canvas class="overlay" id="game-canvas"></canvas>
+        <div class="overlay screen" id="start-screen">
+            <div class="title"></div>
+            <div class="logo-container">
+                <img class="logo" src="navbar.png" alt="title">
+            </div>
+            <button onclick="startGame(true)"> tutorial </button>
+            <button onclick="startGame(false)"> play </button>
+            <button onclick="transition(sI('settings-screen'))"> settings </button>
+        </div>
+        <div class="overlay screen" id="settings-screen">
+            <div class="title"> settings </div>
+            <div class="setting">
+                <label>sound</label>
+                <input type="checkbox"></input>
+            </div>
+            <div class="setting">
+                <label>joystick size</label>
+                <input type="range"></input>
+            </div>
+            <div class="actions">
+                <button onclick="backToMenu()"> menu </button>
+                <button onclick="saveSettings()"> save </button>
+            </div>
+        </div>
+        <div class="overlay screen" id="end-screen">
+            <div class="title"> game over </div>
+            <div class="stats-info">
+                <div> score <span class="stats" id="end-score">0</span> </div>
+                <div> highscore <span class="stats" id="end-highscore">0</span> </div>
+            </div>
+            <div class="actions">
+                <button onclick="backToMenu()"> menu </button>
+                <button onclick="restartGame()"> restart </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
