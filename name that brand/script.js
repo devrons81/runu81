@@ -15,9 +15,9 @@ let logos = [
   },
   {
     logoImag: 'img/windows.webp',
-    result: 'WINDOWS',
-    keyboard: 'TWPDUSRNBOAI',
-    numberWords: 7,
+    result: 'MICROSOFT',
+    keyboard: 'TMPDUSRCBOFI',
+    numberWords: 9,
     hint: 'img/windows.webp'
   },
   {
@@ -29,8 +29,8 @@ let logos = [
   },
   {
     logoImag: 'img/snapshot.webp',
-    result: 'SNAPSHOT',
-    keyboard: 'TSPDUGRNOVAH',
+    result: 'SNAPCHOT',
+    keyboard: 'TSPDUCRNOVAH',
     numberWords: 8,
     hint: 'img/snapshot.webp'
   },
