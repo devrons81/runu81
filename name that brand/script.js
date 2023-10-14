@@ -29,7 +29,7 @@ let logos = [
   },
   {
     logoImag: 'img/snapshot.webp',
-    result: 'SNAPCHOT',
+    result: 'SNAPCHAT',
     keyboard: 'TSPDUCRNOVAH',
     numberWords: 8,
     hint: 'img/snapshot.webp'
